@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        bt_location.setOnClickListener(new View.OnClickListener() {
+
+           bt_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
